@@ -3,6 +3,18 @@ body {
   font-size: 16px;
   line-height: 1;
 }
+
+
+#date {
+  border-left: 1px solid black;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: #06AED5;
+  font-size: 30px;
+  color: white;
+}
+
+
 .row {
   display: flex;
 }
@@ -42,7 +54,7 @@ textarea{
 .row {
   white-space: pre-wrap;
   height: 80px;
-  border-top: 1px solid rgb(233, 141, 141);;
+  border-top: 1px solid rgb(14, 13, 13);;
 }
 
 .hour {
