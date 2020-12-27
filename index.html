@@ -1,3 +1,8 @@
+<!-- Things to do:
+change color of row based on Timeblocks
+save text input even after page refresh -->
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -26,13 +31,22 @@
     <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
+      
       <button id= "date" onclick="myFunction()">Click For Date</button>
       <p id="currentDay" class="lead"></p>
     </header>
+
+
+    
     <div class="container">
+
+
+
+
+
       <!-- Timeblocks go here -->
 
-      <form class="row">
+      <form id= "9am" class="row">
         <label class="hour">  9AM</label>
         <textarea class="text" id="9am" row="0" ></textarea>
         <!-- do we need data-row? do we need name? row? -->
@@ -108,6 +122,23 @@
     document.getElementById("currentDay").innerHTML = n;
     }
 
+    checkUpdateColors = function() {
+ var d = newDate();
+ var hourCompare = d.getHours();
+if (hourCompare >= 8 && hourCompare <= 22) {
+		//day time
+    $('#10am').css("background-color", "yellow");
+    $('#10am').css("background-color", "blue");
+} else {
+		//night time
+    $('#9am').css("background-color", "blue");
+    $('#9am').css("background-color", "red");
+}
+}();
+
+setInterval(function() {
+   checkUpdateColors();  
+}, 3000);
     
 
     
