@@ -101,5 +101,9 @@ You are required to submit BOTH of the following for review:
 
 * The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
 
+https://erumd.github.io/Work-Day-Scheduler/
+
+https://github.com/erumd/Work-Day-Scheduler
+
 - - -
 © 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
