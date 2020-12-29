@@ -32,6 +32,7 @@ save text input even after page refresh -->
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
       
+      
       <button id= "date" onclick="myFunction()">Click For Date</button>
       <p id="currentDay" class="lead"></p>
     </header>
@@ -43,59 +44,80 @@ save text input even after page refresh -->
 
 
 
-
+<!-- <form>  -->
       <!-- Timeblocks go here -->
-
-      <form id= "9am" class="row">
+      <!-- <cardBody>  -->
+      <!-- <form id= "9am" class="row">
+        <div class="input-group mb-3">
         <label class="hour">  9AM</label>
-        <textarea class="text" id="9am" row="0" ></textarea>
-        <!-- do we need data-row? do we need name? row? -->
-        <!-- <textarea class="text" id="9am" data-row="0"  name="9am"></textarea> -->
+        
+        <textarea class="text" id="9am"  ></textarea>
+        < do we need data-row? do we need name? row? -->
+        <!-- <textarea class="text" id="9am" data-  name="9am"></textarea> -->
         <!-- do we need DATA-INDEX? -->
         <!-- <button class="save" type="submit" data-index="0">Save</button> -->
-        <button type="submit" class="saveBtn">Save</button>
-    </form>
+         
+          <!-- <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">  -->
+          <!-- <div class="input-group-append">
+            <button class="btn btn-outline-secondary" type="button" id="button-addon2">Button</button>
+          </div>
+        </div> -->
+        <!-- <button type="submit" class= "d-flex align-items-end saveBtn">Save</button>  -->
+      <!-- </div>
+    </form> --> 
+
+  <!-- </cardBody> -->
+
+  <form class="row">
+    <label class="hour" for="9am">  9AM</label>
+    <textarea class="text" id="9am"  ></textarea>
+     <button type="submit1" class="saveBtn">Save</button>
+</form>
 
     <form class="row">
         <label class="hour" for="10am">10AM</label>
-        <textarea class="text" id="10am" row="0" ></textarea>
-        <button type="submit" class="saveBtn">Save</button>
+        <textarea class="text" id="10am"  ></textarea>
+         <button type="submit1" class="saveBtn">Save</button>
     </form>
+
     <form class="row">
       <label class="hour">11AM</label>
-      <textarea class="text" id="11am" row="0" ></textarea>
+      <textarea class="text" id="11am"  ></textarea>
       <button type="submit" class="saveBtn">Save</button>
      </form>
      <form class="row">
       <label class="hour">12PM</label>
-      <textarea class="text" id="12pm" row="0" ></textarea>
+      <textarea class="text" id="12pm"  ></textarea>
       <button type="submit" class="saveBtn">Save</button>
      </form>
      <form class="row">
       <label class="hour">  1PM</label>
-      <textarea class="text" id="1pm" row="0" ></textarea>
+      <textarea class="text" id="1pm"  ></textarea>
       <button type="submit" class="saveBtn">Save</button>
      </form>
      <form class="row">
       <label class="hour">  2PM</label>
-      <textarea class="text" id="2pm" row="0" ></textarea>
+      <textarea class="text" id="2pm"  ></textarea>
       <button type="submit" class="saveBtn">Save</button>
      </form>
      <form class="row">
       <label class="hour">  3PM</label>
-      <textarea class="text" id="3pm" row="0" ></textarea>
+      <textarea class="text" id="3pm"  ></textarea>
       <button type="submit" class="saveBtn">Save</button>
      </form>
      <form class="row">
       <label class="hour">  4PM</label>
-      <textarea class="text" id="4pm" row="0" ></textarea>
+      <textarea class="text" id="4pm"  ></textarea>
       <button type="submit" class="saveBtn">Save</button>
      </form>
      <form class="row">
       <label class="hour">  5PM</label>
-      <textarea class="text" id="5pm" row="0" ></textarea>
+      <textarea class="text" id="5pm"  ></textarea>
       <button type="submit" class="saveBtn">Save</button>
      </form>
+
+
+
 <!-- examle
      <form class="row">
       <label class="hour" for="5pm">7PM</label>
@@ -103,48 +125,16 @@ save text input even after page refresh -->
       <button class="saveBtn" type="submit" data-index="8">Save Event</button>
   </form> -->
 
+
+<!-- </form> -->
     </div>
 
     
 
-    <script>
-      // for date 
-      // function myFunction() {
-      //   var d = new Date();
-      //   var n = d.toLocaleDateString();
-      //   document.getElementById("currentDay").innerHTML = n;
-      // }
-
-      // for date and time
-      function myFunction() {
-    var d = new Date();
-    var n = d.toLocaleString();
-    document.getElementById("currentDay").innerHTML = n;
-    }
-
-    checkUpdateColors = function() {
- var d = newDate();
- var hourCompare = d.getHours();
-if (hourCompare >= 8 && hourCompare <= 22) {
-		//day time
-    $('#10am').css("background-color", "yellow");
-    $('#10am').css("background-color", "blue");
-} else {
-		//night time
-    $('#9am').css("background-color", "blue");
-    $('#9am').css("background-color", "red");
-}
-}();
-
-setInterval(function() {
-   checkUpdateColors();  
-}, 3000);
     
-
-    
-      </script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src= "script.js"> </script>
   </body>
 </html>
