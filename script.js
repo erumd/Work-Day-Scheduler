@@ -5,12 +5,40 @@
       //   document.getElementById("currentDay").innerHTML = n;
       // }
 
-      // for date and time W3Schools
+      // for date and time W3Schools, moment
+
+      moment().format("dddd, MMMM Do");
+      let now = moment().format("dddd, MMMM Do");
       function myFunction() {
         var d = new Date();
         var n = d.toLocaleString();
-        document.getElementById("currentDay").innerHTML = n;
         }
+
+        myFunction();
+        document.getElementById("currentDay").innerHTML = now;
+
+        console.log (myFunction);
+
+
+       
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
     
     // https://date-fns.org/docs/Getting-Started
     // import { format, compareAsc } from 'date-fns'
@@ -35,16 +63,18 @@
 
     // localStorage.setItem('9am', buttonSave;
 
-    cardBody.innerHTML = 
-                        <p class="text">
-                             ${localStorage.getItem('9am')} 
-                        </p>
+    // var cardBody;
 
-                        const buttonSubmit = document.getElementById('9am');
-                                    buttonSubmit.addEventListener('click', function(event) {
-                                        event.preventDefault();
-                                            const name = nameEl.value.trim();
-                                         localStorage.setItem('9am', text);
+    // cardBody.innerHTML = '<p class="text"> ${localStorage.getItem("9am")}  </p>'
+
+    //                     const buttonSubmit = document.getElementById('9am');
+    //                                 buttonSubmit.addEventListener('click', function(event) {
+    //                                     event.preventDefault();
+    //                                         const name = nameEl.value.trim();
+    //                                      localStorage.setItem('9am', text);
+    //                     })
+
+    
 
 
     
@@ -96,3 +126,8 @@
     //    checkUpdateColors();  
     // }, 3000);
         
+
+
+
+
+

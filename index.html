@@ -2,6 +2,11 @@
 change color of row based on Timeblocks
 save text input even after page refresh -->
 
+<!-- change color of row based on Timeblocks
+  try luxon
+add luxon cdn
+ -->
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -24,6 +29,7 @@ save text input even after page refresh -->
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <script src= "moment.js"> </script>
     <title>Work Day Scheduler</title>
   </head>
 
@@ -31,10 +37,10 @@ save text input even after page refresh -->
     <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
-      
-      
-      <button id= "date" onclick="myFunction()">Click For Date</button>
       <p id="currentDay" class="lead"></p>
+      
+      <!-- <button id= "date" onclick="myFunction()">Click For Date</button> -->
+      
     </header>
 
 
@@ -70,49 +76,49 @@ save text input even after page refresh -->
 
   <form class="row">
     <label class="hour" for="9am">  9AM</label>
-    <textarea class="text" id="9am"  ></textarea>
+    <textarea class="text" id="9am"></textarea>
      <button type="submit1" class="saveBtn">Save</button>
 </form>
 
     <form class="row">
         <label class="hour" for="10am">10AM</label>
-        <textarea class="text" id="10am"  ></textarea>
+        <textarea class="text" id="10am"></textarea>
          <button type="submit1" class="saveBtn">Save</button>
     </form>
 
     <form class="row">
       <label class="hour">11AM</label>
-      <textarea class="text" id="11am"  ></textarea>
+      <textarea class="text" id="11am"></textarea>
       <button type="submit" class="saveBtn">Save</button>
      </form>
      <form class="row">
       <label class="hour">12PM</label>
-      <textarea class="text" id="12pm"  ></textarea>
+      <textarea class="text" id="12pm"></textarea>
       <button type="submit" class="saveBtn">Save</button>
      </form>
      <form class="row">
       <label class="hour">  1PM</label>
-      <textarea class="text" id="1pm"  ></textarea>
+      <textarea class="text" id="1pm"></textarea>
       <button type="submit" class="saveBtn">Save</button>
      </form>
      <form class="row">
       <label class="hour">  2PM</label>
-      <textarea class="text" id="2pm"  ></textarea>
+      <textarea class="text" id="2pm"></textarea>
       <button type="submit" class="saveBtn">Save</button>
      </form>
      <form class="row">
       <label class="hour">  3PM</label>
-      <textarea class="text" id="3pm"  ></textarea>
+      <textarea class="text" id="3pm"></textarea>
       <button type="submit" class="saveBtn">Save</button>
      </form>
      <form class="row">
       <label class="hour">  4PM</label>
-      <textarea class="text" id="4pm"  ></textarea>
+      <textarea class="text" id="4pm"></textarea>
       <button type="submit" class="saveBtn">Save</button>
      </form>
      <form class="row">
       <label class="hour">  5PM</label>
-      <textarea class="text" id="5pm"  ></textarea>
+      <textarea class="text" id="5pm"></textarea>
       <button type="submit" class="saveBtn">Save</button>
      </form>
 

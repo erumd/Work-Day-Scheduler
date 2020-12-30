@@ -58,7 +58,7 @@ textarea{
   margin: auto;
   display: flex;
   text-align: center;
-  width: 100%;
+  /* width: 100%; */
 }
 
 .hour {
@@ -113,7 +113,7 @@ textarea{
    @media screen and (max-width: 768px) {
     .saveBtn {
       width: 100%;
-      /* float: left; */
+      float: right;
       /* display: flex; */
       
     } 
