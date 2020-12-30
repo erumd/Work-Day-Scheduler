@@ -20,25 +20,67 @@
         console.log (myFunction);
 
 
-       
+    var workday= [
+            { time: "9AM",
+            input: "",
+            },
+            { time: "10M",
+            input: "",
+            },
+            { time: "11AM",
+            input: "",
+            },
+            { time: "12PM",
+            input: "",
+            },
+            { time: "1PM",
+            input: "",
+            },
+            { time: "2PM",
+            input: "",
+            },
+            { time: "3PM",
+            input: "",
+            },
+            { time: "4PM",
+            input: "",
+            },
+            { time: "5PM",
+            input: "",
+            },
+    ]
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+    function enter () {
+        $("container").html ("");
+        for (let i = 0; i < workday.length, i++ {
+            let row = $('<div>');
 
 
         
+        }
+
+
+        
+       workday= JSON.parse (localStorage.getItem ("inout))"));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     
     // https://date-fns.org/docs/Getting-Started
     // import { format, compareAsc } from 'date-fns'
