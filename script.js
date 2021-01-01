@@ -193,6 +193,148 @@
         }
 
         switch (currentHour) {
+            case 9:
+            $("#9am").addClass("present");
+            $("textarea").addClass("future");
+            if ($("#9am").hasClass("future")) {
+              $("#9am").removeClass("future");
+            }
+            break;
+            case 10:
+            $("#9am").addClass("past");
+            $("#10am").addClass("present");
+            $("textarea").addClass("future");
+            if ($("#10am").hasClass("future")) {
+              $("#10am").removeClass("future");
+              $("#9am").removeClass("future");
+
+            }
+            break;
+            case 11:
+            $("#9am").addClass("past");
+            $("#10am").addClass("past");
+            $("#11am").addClass("present");
+            $("textarea").addClass("future");
+            if ($("#11am").hasClass("future")) {
+              $("11am").removeClass("future");
+              $("#10am").removeClass("future");
+              $("#9am").removeClass("future");
+            }
+            break;
+            case 12:
+                $("#9am").addClass("past");
+                $("#10am").addClass("past"); 
+                $("#11am").addClass("past"); 
+            $("#12pm").addClass("present");
+            $("textarea").addClass("future");
+            if ($("#12pm").hasClass("future")) {
+              $("#12pm").removeClass("future");
+              $("11am").removeClass("future");
+              $("#10am").removeClass("future");
+              $("#9am").removeClass("future");
+            }
+            break;
+            case 13:
+                $("#9am").addClass("past");
+                $("#10am").addClass("past"); 
+                $("#11am").addClass("past"); 
+                $("#12pm").addClass("past"); 
+            $("#1pm").addClass("present");
+            $("textarea").addClass("future");
+            if ($("#1pm").hasClass("future")) {
+              $("#12pm").removeClass("future");
+              $("11am").removeClass("future");
+              $("#10am").removeClass("future");
+              $("#9am").removeClass("future");
+            }
+            break;
+            case 14:
+                $("#9am").addClass("past");
+                $("#10am").addClass("past"); 
+                $("#11am").addClass("past"); 
+                $("#12pm").addClass("past"); 
+                $("#1pm").addClass("past"); 
+            $("#2pm").addClass("present");
+            $("textarea").addClass("future");
+            if ($("#2pm").hasClass("future")) {
+              $("#2pm").removeClass("future");
+              $("#1pm").removeClass("future");
+              $("#12pm").removeClass("future");
+              $("11am").removeClass("future");
+              $("#10am").removeClass("future");
+              $("#9am").removeClass("future");
+            }
+            break;
+            case 15:
+                $("#9am").addClass("past");
+                $("#10am").addClass("past"); 
+                $("#11am").addClass("past"); 
+                $("#12pm").addClass("past"); 
+                $("#1pm").addClass("past"); 
+                $("#2pm").addClass("past"); 
+            $("#3pm").addClass("present");
+            $("textarea").addClass("future");
+            if ($("#3pm").hasClass("future")) {
+              $("#3pm").removeClass("future");
+              $("#2pm").removeClass("future");
+              $("#1pm").removeClass("future");
+              $("#12pm").removeClass("future");
+              $("11am").removeClass("future");
+              $("#10am").removeClass("future");
+              $("#9am").removeClass("future");
+            }
+            break;
+            case 16:
+                // adding case 16 with these times to add the past class
+                $("#9am").addClass("past");
+                $("#10am").addClass("past");
+                $("#11am").addClass("past");
+                $("#12pm").addClass("past");
+                $("#1pm").addClass("past");
+                $("#2pm").addClass("past");
+                $("#3pm").addClass("past");
+                $("#4pm").addClass("present");
+                $("textarea").addClass("future");
+                if ($("#4pm").hasClass("future")) {
+                  $("#9am").removeClass("future");
+                  $("#10am").removeClass("future");
+                  $("#11am").removeClass("future");
+                  $("#12pm").removeClass("future");
+                  $("#1pm").removeClass("future");
+                  $("#2pm").removeClass("future");
+                  $("#3pm").removeClass("future");
+                  $("#4pm").removeClass("future");
+                }
+                break;
+            case 17:
+                // have to add the past timing for all the previous times
+                $("#9am").addClass("past");
+                $("#10am").addClass("past");
+                $("#11am").addClass("past");
+                $("#12pm").addClass("past");
+                $("#1pm").addClass("past");
+                $("#2pm").addClass("past");
+                $("#3pm").addClass("past");
+                $("#4pm").addClass("past");
+            $("#5pm").addClass("present");
+            $("textarea").addClass("future");
+            if ($("#5pm").hasClass("future")) {
+                // adding remove class for past time
+              $("#5pm").removeClass("future");
+              $("#4pm").removeClass("future");
+              $("#3pm").removeClass("future");
+              $("#2pm").removeClass("future");
+              $("#1pm").removeClass("future");
+              $("#12pm").removeClass("future");
+              $("#11am").removeClass("future");
+              $("#10am").removeClass("future");
+              $("#9am").removeClass("future");
+            }
+            break;
+            
+
+
+
 
         }
 
