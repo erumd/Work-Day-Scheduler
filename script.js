@@ -45,12 +45,89 @@
             },
     ]
 
+    // adding textarea to local storage 
+    document.getElementById("save1").addEventListener("click", function ()
+    {
+        var time9 = document.getElementById("9am").value ;
+        //localStorage["user"] = user ;
+        localStorage.setItem("9am", time9) ;
+        console.log(localStorage);
+    } );
+
+    document.getElementById("save2").addEventListener("click", function ()
+    {
+        var time10 = document.getElementById("10am").value ;
+        //localStorage["user"] = user ;
+        localStorage.setItem("10am", time10) ;
+        console.log(localStorage);
+    } );
+
+    document.getElementById("save3").addEventListener("click", function ()
+    {
+        var time11 = document.getElementById("11am").value ;
+        //localStorage["user"] = user ;
+        localStorage.setItem("11am", time11) ;
+        console.log(localStorage);
+    } );
+
+    document.getElementById("save4").addEventListener("click", function ()
+    {
+        var time12 = document.getElementById("12pm").value ;
+        //localStorage["user"] = user ;
+        localStorage.setItem("12pm", time12) ;
+        console.log(localStorage);
+    } );
+
+    document.getElementById("save5").addEventListener("click", function ()
+    {
+        var time1 = document.getElementById("1pm").value ;
+        //localStorage["user"] = user ;
+        localStorage.setItem("1pm", time1) ;
+        console.log(localStorage);
+    } );
+
+    document.getElementById("save6").addEventListener("click", function ()
+    {
+        var time2 = document.getElementById("2pm").value ;
+        //localStorage["user"] = user ;
+        localStorage.setItem("2pm", time2) ;
+        console.log(localStorage);
+    } );
+
+    document.getElementById("save7").addEventListener("click", function ()
+    {
+        var time3 = document.getElementById("3pm").value ;
+        //localStorage["user"] = user ;
+        localStorage.setItem("3pm", time3) ;
+        console.log(localStorage);
+    } );
+
+    document.getElementById("save8").addEventListener("click", function ()
+    {
+        var time4 = document.getElementById("4pm").value ;
+        //localStorage["user"] = user ;
+        localStorage.setItem("4pm", time4) ;
+        console.log(localStorage);
+    } );
+
+    document.getElementById("save9").addEventListener("click", function ()
+    {
+        var time5 = document.getElementById("5pm").value ;
+        //localStorage["user"] = user ;
+        localStorage.setItem("5pm", time5) ;
+        console.log(localStorage);
+    } );
+
+    // trying to get local storage to stay after refresh 
+    $('#9am').val(JSON.parse(localStorage.getItem('time9')));
+
+    
 
     function enter () {
         $("#container").html ("");
         for (let i = 0; i < workday.length; i++) {
             // made into ID
-            let row = $('<#div>');
+            let row = $('<div>');
             let textarea = $('<textarea>');
             let label = $('<label>');
             let button = $('<button>');
@@ -60,7 +137,7 @@
             button.attr ('id', 'save');
             button.append ('icon');
             row.attr ('class', 'row');
-            label.text (workday [i], time);
+            label.text (workday[i].time);
             let realNum = parseInt(workday [i].time);
             let input = workday [i].input;
             label.attr('id', 'time');
@@ -79,13 +156,17 @@
         // render (workday);
         init ();
         function init() {
-            JSON.parse (localStorage.getItem('input'));
+            JSON.parse (localStorage.getItem('time1'));
             // render ();
+
         }
+
+        enter();
 
         let currentHour = moment ().get('hour');
 
-        $('button').on('click'), function () {
+        $('button').on('click'), function (e) {
+            e.preventDefault();
             if ($ (this). hasclass ('saveBtn')) {
                 let textVal = $(this).parent('row').find('textarea');
                 let indexVal = textVal.attr ('value');
