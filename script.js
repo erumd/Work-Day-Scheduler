@@ -1,24 +1,19 @@
- // for date 
+ // for date . had to move to html script bc date was NOT displaying.
       // function myFunction() {
       //   var d = new Date();
       //   var n = d.toLocaleDateString();
       //   document.getElementById("currentDay").innerHTML = n;
       // }
-
       // for date and time W3Schools, moment
-
-      moment().format("dddd, MMMM Do");
-      let now = moment().format("dddd, MMMM Do");
-      function myFunction() {
-        var d = new Date();
-        var n = d.toLocaleString();
-        }
-
-        myFunction();
-        document.getElementById("currentDay").innerHTML = now;
-
-        console.log (myFunction);
-
+    //   moment().format("dddd, MMMM Do");
+    //   let now = moment().format("dddd, MMMM Do");
+    //   function myFunction() {
+    //     var d = new Date();
+    //     var n = d.toLocaleString();
+    //     }
+    //     myFunction();
+    //     document.getElementById("currentDay").innerHTML = now;
+    //     console.log (myFunction);
 
     var workday= [
             { time: "9AM",
@@ -52,17 +47,78 @@
 
 
     function enter () {
-        $("container").html ("");
-        for (let i = 0; i < workday.length, i++ {
-            let row = $('<div>');
+        $("#container").html ("");
+        for (let i = 0; i < workday.length; i++) {
+            // made into ID
+            let row = $('<#div>');
+            let textarea = $('<textarea>');
+            let label = $('<label>');
+            let button = $('<button>');
+            let icon = $('<i>');
+            icon.attr ('class', 'fas fa-save');
+            button.attr ('class', 'saveBtn');
+            button.attr ('id', 'save');
+            button.append ('icon');
+            row.attr ('class', 'row');
+            label.text (workday [i], time);
+            let realNum = parseInt(workday [i].time);
+            let input = workday [i].input;
+            label.attr('id', 'time');
+            row.append(label);
+            textarea.attr ('id', realNum);
+            textarea.text (input);
+            row.append (textarea);
+            row.append (button);
+            $('.container').append(row);
+        }
+        console.log(workday);
 
-
-        
+        workday= JSON.parse (localStorage.getItem ("input))"));
+    }
+        // added render
+        // render (workday);
+        init ();
+        function init() {
+            JSON.parse (localStorage.getItem('input'));
+            // render ();
         }
 
+        let currentHour = moment ().get('hour');
+
+        $('button').on('click'), function () {
+            if ($ (this). hasclass ('saveBtn')) {
+                let textVal = $(this).parent('row').find('textarea');
+                let indexVal = textVal.attr ('value');
+                let indexId = textVal.attr ('id');
+                let obj = workday.find (
+                    (o) => o.time === indexId + 'AM' || o
+                );
+                Obj.input = textVal.val ();
+                console.log(workday);
+
+                $('textarea').each(function () {
+                    x += this.value.length;
+                });
+
+                if (x=== 0) {
+                    alert('error');
+                    location.reload ();
+                } else {
+                    localStorage.setItem('input', JSON.stringify(workday));
+                    console.log(workday);
+
+                }
+            }
+        }
+
+        switch (currentHour) {
+
+        }
+
+        console.log(currentHour);
+
 
         
-       workday= JSON.parse (localStorage.getItem ("inout))"));
 
 
 
@@ -172,4 +228,4 @@
 
 
 
-
+    

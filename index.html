@@ -38,14 +38,40 @@ add luxon cdn
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
       <p id="currentDay" class="lead"></p>
-      
       <!-- <button id= "date" onclick="myFunction()">Click For Date</button> -->
       
     </header>
 
+    <!-- <div id= "questions">
+      <h1 id= "title"></h1>
+      <section id= "answers" class="answers"></section>
+  </div> -->
+  
+ 
+    <div id = "row"> 
+      <input type="text" id="textarea" >
+      <button id="saveBtn" class='button'>Save</button>
 
-    
-    <div class="container">
+      <!-- <div id="item"> -->
+      <!-- </div> -->
+  </div>
+    <!-- <section id= 'time' > </section>
+    <workday ></workday>
+    <input type='textarea' id='txt1' />
+    <input type='button' id='button' value='Save' /> -->
+  
+  
+
+ 
+
+  <!-- let row = $('<div>');
+    let textarea = $('<textarea>');
+    let label = $('<label>');
+    let button = $('<button>');
+    let icon = $('<i>'); -->
+
+
+    <!-- <div class="container"> -->
 
 
 
@@ -120,8 +146,8 @@ add luxon cdn
       <label class="hour">  5PM</label>
       <textarea class="text" id="5pm"></textarea>
       <button type="submit" class="saveBtn">Save</button>
-     </form>
- -->
+     </form> -->
+
 
 
 <!-- examle
@@ -133,9 +159,21 @@ add luxon cdn
 
 
 <!-- </form> -->
-    </div>
+    <!-- </div> -->
 
-    
+    <script>
+       moment().format("dddd, MMMM Do");
+      let now = moment().format("dddd, MMMM Do");
+      function myFunction() {
+        var d = new Date();
+        var n = d.toLocaleString();
+        }
+
+        myFunction();
+        document.getElementById("currentDay").innerHTML = now;
+
+        console.log (myFunction);
+    </script>
 
     
 
