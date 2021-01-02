@@ -119,14 +119,15 @@
     } );
 
     // trying to get local storage to stay after refresh 
-    $('#9am').val(JSON.parse(localStorage.getItem('time9')));
+    // "time9 " needs to match 9am. removeed JSON.parse bc can not work on strings
+    // $jQuery selecting the whole element. .val is setting the value of 9am. that is being set equal to local storage of 9am
+    $('#9am').val((localStorage.getItem('9am')));
 
     
 
     function enter () {
         $("#container").html ("");
         for (let i = 0; i < workday.length; i++) {
-            // made into ID
             let row = $('<div>');
             let textarea = $('<textarea>');
             let label = $('<label>');
@@ -152,13 +153,10 @@
 
         workday= JSON.parse (localStorage.getItem ("input))"));
     }
-        // added render
-        // render (workday);
+      
         init ();
         function init() {
             JSON.parse (localStorage.getItem('time1'));
-            // render ();
-
         }
 
         enter();
