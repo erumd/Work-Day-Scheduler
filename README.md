@@ -6,7 +6,7 @@ Created a simple calendar application that allows the user to save events for ea
 
 ## Mock-Up
 
-The following animation demonstrates the application functionality:
+The following image shows the web application's appearance and functionality:
 
 <img src= "/Assets/Work-Day.jpg" alt= "webpage view" width= "200" height="200">
 
@@ -18,7 +18,7 @@ https://erumd.github.io/Work-Day-Scheduler/
 
 https://github.com/erumd/Work-Day-Scheduler
 
-I used the  [Moment.js](https://momentjs.com/) to work with dates and times. Other resources that I used for this website are Visual Studio Code, Stack Overflow,and  W3 Schools. I could not have completed this without the help of my tutor and classmate Iyana. 
+I used the  [Moment.js](https://momentjs.com/) to work with dates and times. Other resources that I used for this website are Visual Studio Code, Stack Overflow, and  W3 Schools. I could not have completed this without the help of my tutor and classmate Iyana. 
 
 - - -
 © 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
