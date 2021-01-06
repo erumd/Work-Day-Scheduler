@@ -8,7 +8,8 @@ Created a simple calendar application that allows the user to save events for ea
 
 The following image shows the web application's appearance and functionality:
 
-<img src= "/Assets/Work-Day.jpg" alt= "webpage view" width= "200" height="200">
+<img src= "/Assets/Work-Day.jpg" alt= "webpage view" >
+<!-- width= "200" height="200" -->
 
 
 
