@@ -258,8 +258,8 @@
                 $("#11am").addClass("past"); 
                 $("#12pm").addClass("past"); 
                 $("#1pm").addClass("past"); 
-            $("#2pm").addClass("present");
-            $("textarea").addClass("future");
+                $("#2pm").addClass("present");
+                $("textarea").addClass("future");
             if ($("#2pm").hasClass("future")) {
               $("#2pm").removeClass("future");
               $("#1pm").removeClass("future");
@@ -276,8 +276,8 @@
                 $("#12pm").addClass("past"); 
                 $("#1pm").addClass("past"); 
                 $("#2pm").addClass("past"); 
-            $("#3pm").addClass("present");
-            $("textarea").addClass("future");
+                $("#3pm").addClass("present");
+                $("textarea").addClass("future");
             if ($("#3pm").hasClass("future")) {
               $("#3pm").removeClass("future");
               $("#2pm").removeClass("future");

@@ -13,7 +13,7 @@ I used the  [Moment.js](https://momentjs.com/) to work with dates and times. Oth
 
 The following animation demonstrates the application functionality:
 
-![day planner demo](./Assets/05-third-party-apis-homework-demo.gif)
+![day planner demo](./Assets/Work Day Schedule. jpg) 
 
 
  
