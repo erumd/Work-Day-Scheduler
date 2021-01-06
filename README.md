@@ -2,24 +2,13 @@
 
 ## About the Project
 
-Created a simple calendar application that allows the user to save events for each hour of the day by modifying starter code. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.
-
-
-
-
-
+Created a simple calendar application that allows the user to save events for each hour of the day by modifying starter code. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.  You can save a task to do for each hour. It will save to local storage and appear after page refresh. Based on your current time colors of each row change based on the past, present, or future time.
 
 ## Mock-Up
 
 The following animation demonstrates the application functionality:
 
-<img src= "/Assets/Work-Day.jpg" alt= "webpage view" width= "400" height="200">
-<!-- > -->
-
-
-![day planner demo](./Assets/Work Day Schedule. jpg) 
-
-
+<img src= "/Assets/Work-Day.jpg" alt= "webpage view" width= "200" height="200">
 
 
 
