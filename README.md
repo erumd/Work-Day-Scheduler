@@ -13,7 +13,7 @@ Created a simple calendar application that allows the user to save events for ea
 
 The following animation demonstrates the application functionality:
 
-<img src= "./Assets/Work Day Schedule. jgn" alt= "webpage view" width= "400" height="200">
+<img src= "/Assets/Work-Day.jpg" alt= "webpage view" width= "400" height="200">
 <!-- > -->
 
 
